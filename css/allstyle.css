@@ -2,9 +2,21 @@ body {
   font-size: 13px;
   font-family: "Noto Sans TC", "O spen Sans"; }
 
+html {
+  height: 100%; }
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto; }
+
+div {
+  box-sizing: border-box; }
+
 .wrapper {
-  width: 100vw;
-  height: 100vh;
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto;
   overflow: hidden; }
 
 .navbar {
@@ -33,22 +45,16 @@ body {
         line-height: 6.5rem;
         color: #222; }
 
-.v-middle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); }
-
 section {
   width: 100vw;
   height: 100vh; }
-  section .container {
-    height: 100%; }
   section .row {
     height: 100%;
     position: relative; }
   section .content {
     width: 100%;
-    margin-top: 20px; }
+    height: 100%;
+    padding-top: 25%; }
   section li span {
     background-color: #1D2B64;
     padding: 4px 10px;
@@ -82,5 +88,15 @@ section {
   background: linear-gradient(to left, #1D2B64, #F8CDDA);
   /* Chrome 10-25, Safari 5.1-6 */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+#vd {
+  background-color: rgba(0, 0, 0, 0.05);
+  background-image: url(../images/iceberg.png);
+  background-attachment: scroll;
+  background-size: 120px auto;
+  background-repeat: no-repeat;
+  background-position: 80% 60%; }
+  #vd .icephoto img.ice {
+    height: 400px; }
 
 /*# sourceMappingURL=allstyle.css.map */
