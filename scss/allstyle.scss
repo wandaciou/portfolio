@@ -1,6 +1,6 @@
 body{
     font-size: 13px;
-    font-family: "Noto Sans TC", Raleway ;
+    font-family: "Noto Sans TC", "Helvetica Neue";
 }
 html {
       height: 100%;
@@ -49,16 +49,26 @@ div{
                 padding:0;
                 width: auto;
                 height: auto;
-                &:hover, &:active, &:focus{
-                    color: #ff8eff;
-                }
-                &:before{
-                    display: none;
-                }
+                text-align: center;
+                // &:hover, &:active, &:focus{
+                //     color: #ff8eff;
+                // }
+                // &:before{
+                //     content: '';
+                //     position: absolute;
+                //     bottom: 0;
+                //     width: calc(100% - 2rem);
+                //     height: 2px;
+                //     background: transparent;
+                //     left:0;
+                // }
             }
          }
     }
 }
+
+
+
 
 //
 // .v-middle{
@@ -93,6 +103,9 @@ section{
             color: rgba(255, 255, 255, 0.9);
         }
         
+    }
+    h1{
+        letter-spacing: 0.1rem
     }
 }
 
@@ -137,11 +150,11 @@ section{
 
 #vd{
     background-color: rgba(0, 0, 0, 0.05);
-    background-image: url(../images/iceberg.png);
+    background-image: url(../images/iceberg.svg);
     background-attachment: scroll;
     background-size: 100px auto;
     background-repeat: no-repeat;
-    background-position: 80% 100%;
+    background-position: 90% 110%;
     .icephoto{
         
         img.ice{
