@@ -1,4 +1,86 @@
 body {
-  font-size: 13px; }
+  font-size: 13px;
+  font-family: "Noto Sans TC", "O spen Sans"; }
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+
+.navbar {
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  background: transparent;
+  z-index: 99;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0; }
+  .navbar .navbar-list {
+    list-style: none;
+    margin-bottom: 0; }
+    .navbar .navbar-list .navbar-item {
+      position: relative;
+      float: left;
+      margin-bottom: 0; }
+      .navbar .navbar-list .navbar-item .navbar-link {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 2rem;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222; }
+
+.v-middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+section {
+  width: 100vw;
+  height: 100vh; }
+  section .container {
+    height: 100%; }
+  section .row {
+    height: 100%;
+    position: relative; }
+  section .content {
+    width: 100%;
+    margin-top: 20px; }
+  section li span {
+    background-color: #1D2B64;
+    padding: 4px 10px;
+    color: rgba(255, 255, 255, 0.9); }
+
+#about span.lighter {
+  background-color: #fffe46; }
+#about .selfie {
+  width: 20%;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 0px; }
+  #about .selfie img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; }
+#about:before {
+  display: block;
+  position: absolute;
+  border-radius: 900px 1000px 1000px 1000px;
+  left: 60%;
+  top: -100px;
+  content: "";
+  width: 1000px;
+  height: 1000px;
+  background: #1D2B64;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #1D2B64, #F8CDDA);
+  background: -moz-linear-gradient(right, #1D2B64, #F8CDDA);
+  background: -o-linear-gradient(right, #1D2B64, #F8CDDA);
+  background: linear-gradient(to left, #1D2B64, #F8CDDA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 /*# sourceMappingURL=allstyle.css.map */

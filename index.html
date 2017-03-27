@@ -21,27 +21,88 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="js/onepage-scroll.css">
   <link rel="stylesheet" href="css/allstyle.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- js
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/onepagescroll.js"></script>
+
 </head>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
-
+	<div class="wrapper">
+		<nav class="navbar">
+			<div class="container">
+				<ul class="navbar-list">
+					<li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#vd">VisualDesign</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#uiux">UIUX</a></li>
+					<li class="navbar-item"><a class="navbar-link" href="#" >More</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="main">
+			<section id="about">
+				<div class="container">
+					<div class="row">
+						<div class="content v-middle u-cf">
+							<div class="one-half column " >
+								<h1>Ｈello! I am <br/>ＷanTing Ciou</h1>
+								<p>focus on:</p>
+								<ul>
+									<li><span>Visual Design</span></li>
+									<li><span>UI/UX</span></li>
+								</ul>
+								<p>and learning <span class="lighter">Front end developer skills</span></p>
+							</div>
+							<div class="one-half column ">
+								<div class="selfie"><img src="images/moi.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="vd">
+				<div class="container">
+					<div class="row">
+						<div class="content v-middle">
+							<div class="one-half column " >
+								<h1>Visual Design</h1>
+								<p>Seeing is not always believing. </p>
+							</div>
+							<div class="one-half column "></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="uiux">
+				<div class="container">
+					<div class="row">
+						<div class="content v-middle">
+							<div class="one-half column " >
+								<h1>UIUX</h1>
+								<p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+							</div>
+							<div class="one-half column "></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+	 onePageScroll(".main", {
+     sectionContainer: "section",
+     loop: true,
+     responsiveFallback: false
+   });
+		
+	</script>
 </body>
 </html>

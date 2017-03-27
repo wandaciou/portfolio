@@ -1,1 +1,0 @@
-sass --watch /Users/wanda/Dropbox/MyProject/portfolio/portfolio/scss:/Users/wanda/Dropbox/MyProject/portfolio/portfolio/css
