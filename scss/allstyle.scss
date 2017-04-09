@@ -204,18 +204,4 @@ section{
         height: 250px;
         opacity: 0.4;
     }
-    &:after{
-        content: "";
-        //background-image: url(../images/uiux-layer1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #0012bc;
-        // background-blend-mode:darken;
-        position: absolute;
-        top:10%;
-        left:60%;
-        width: 50%;
-        height: 90%;
-        opacity: 0.4;
-    }
 }

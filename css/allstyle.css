@@ -137,16 +137,5 @@ section {
   width: 250px;
   height: 250px;
   opacity: 0.4; }
-.bg-box:after {
-  content: "";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #0012bc;
-  position: absolute;
-  top: 10%;
-  left: 60%;
-  width: 50%;
-  height: 90%;
-  opacity: 0.4; }
 
 /*# sourceMappingURL=allstyle.css.map */
