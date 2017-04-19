@@ -17,12 +17,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="js/onepage-scroll.css">
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/featherlight.css">
   <link rel="stylesheet" href="css/allstyle.css">
 
   <!-- Favicon
@@ -32,16 +35,19 @@
   <!-- js
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="js/onepagescroll.js"></script>
+  <script type="text/javascript" src="js/jquery-1.7.0.min.js"></script>
+  <script type="text/javascript" src="js/featherlight.js"></script>
 
 </head>
 <body>
 	<nav class="navbar">
 			<div class="container">
 				<ul class="navbar-list onepage-pagination">
-					<li class="navbar-item"><a class="navbar-link" data-index="1" href="#1">ME</a></li>
-					<li class="navbar-item"><a class="navbar-link" data-index="2" href="#2">VisualDesign</a></li>
+					<li class="navbar-item"><a class="navbar-link" data-index="1" href="#1">Me</a></li>
+					<li class="navbar-item"><a class="navbar-link" data-index="2" href="#2">VD</a></li>
 					<li class="navbar-item"><a class="navbar-link" data-index="3" href="#3">UIUX</a></li>
 					<li class="navbar-item"><a class="navbar-link" data-index="4" href="#4" >More</a></li>
+					<li class="navbar-item"><a class="navbar-link" data-index="5" href="#5" >Works</a></li>
 				</ul>
 			</div>
 	</nav>
@@ -108,7 +114,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="works">
+			<section id="more">
 				<div class="container">
 					<div class="row ">
 						<div class="content u-cf">
@@ -121,13 +127,46 @@
 								</ul>
 								<p>carry out and make it possible.</p>
 							</div>
-							<div class="one-half column"></div>
+							<div class="one-half column">
+								<div class="cube1"></div>
+								<img src="images/cube.svg" alt="">
+								<span class="mark"> >____ </span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section id="works">
+				<div class="container">
+					<div class="items clearfix">
+						<div class="item hvr-push" data-featherlight="#mylightbox-1" style="background-image:url(images/cover1.png)"></div>
+						<div class="item hvr-push" data-featherlight="#mylightbox-2" style="background-image: url(images/x-4.png)"></div>
+						<div class="item hvr-push" data-featherlight="#mylightbox-3" style="background-image: url(https://mir-s3-cdn-cf.behance.net/projects/202/4f35bd46833043.Y3JvcCw2NjIsNTE4LDc0Nyw3Mw.png)"></div>
+						<a href="https://pressplay.cc/" target="blank" ><div class="item hvr-push" style="background-image: url(images/w4.png)"></div></a> 
+						<div class="lightbox" id="mylightbox-1"> 
+							<img src="images/x-0.png" alt="">
+							<div class="prototype">
+								<iframe width="438" height="930" src="https://invis.io/KM6R0W0D4" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<button class="featherlight-close" aria-label="Close">✕</button>
+						</div>
+						<div class="lightbox" id="mylightbox-2">
+							<img src="images/x-1.png" alt=""> 
+							<img src="images/x-2.jpg" alt="">
+							
+							<button class="featherlight-close" aria-label="Close">✕</button>
+						</div>
+						<div class="lightbox" id="mylightbox-3"> 
+							<img src="images/w2.png" alt="">
+							<button class="featherlight-close" aria-label="Close">✕</button>
+						</div>
+						
+					</div>				
+				</div>
+			</section>
 		</div>
 	</div>
+	
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>
