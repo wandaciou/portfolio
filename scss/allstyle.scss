@@ -259,6 +259,7 @@ section{
     height:100%;
     padding:40px;
     text-align: center;
+    overflow-y: scroll;
     img{
         max-width: 100%;
         display: block;
@@ -268,6 +269,16 @@ section{
         border:none;
         font-size: 40px;
     }
+}
+.light-wrap{
+    width: 100%;
+    overflow: hidden;
+    height: calc(100vh - 100px);
+}
+.light-scroll{
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
 }
 .featherlight .featherlight-content{
     margin: 0;

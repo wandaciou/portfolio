@@ -23,10 +23,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="js/onepage-scroll.css">
+  
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/featherlight.css">
-  <link rel="stylesheet" href="css/allstyle.css">
+  <link rel="stylesheet" href="js/onepage-scroll.css">
+  <link rel="stylesheet" href="scss/allstyle.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -34,9 +35,10 @@
 
   <!-- js
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script type="text/javascript" src="js/onepagescroll.js"></script>
+  
   <script type="text/javascript" src="js/jquery-1.7.0.min.js"></script>
   <script type="text/javascript" src="js/featherlight.js"></script>
+  <script type="text/javascript" src="js/onepagescroll.js"></script>
 
 </head>
 <body>
@@ -144,9 +146,14 @@
 						<div class="item hvr-push" data-featherlight="#mylightbox-3" style="background-image: url(https://mir-s3-cdn-cf.behance.net/projects/202/4f35bd46833043.Y3JvcCw2NjIsNTE4LDc0Nyw3Mw.png)"></div>
 						<a href="https://pressplay.cc/" target="blank" ><div class="item hvr-push" style="background-image: url(images/w4.png)"></div></a> 
 						<div class="lightbox" id="mylightbox-1"> 
-							<img src="images/x-0.png" alt="">
-							<div class="prototype">
-								<iframe width="438" height="930" src="https://invis.io/KM6R0W0D4" frameborder="0" allowfullscreen></iframe>
+							<div class="light-wrap">
+                <div class="light-scroll">
+                  	<img src="images/x-0.png" alt="">
+                    <div class="prototype">
+                      <iframe width="438" height="930" src="https://invis.io/KM6R0W0D4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+							
 							</div>
 							<button class="featherlight-close" aria-label="Close">✕</button>
 						</div>
@@ -172,10 +179,9 @@
   <script>
 	 onePageScroll(".main", {
      sectionContainer: "section",
-     loop: true,
+     loop: false,
      responsiveFallback: false
    });
-		
-	</script>
+  </script>
 </body>
 </html>
